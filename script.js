@@ -108,9 +108,7 @@ function handleCellClick(cell) {
   // 헤더들의 데이터 가져오기
   const columnHeader = spreadsheet[0][cell.column];
   const rowHeader = spreadsheet[cell.row][0];
-  // console.log('clicked cell', cell);
-  // console.log('column header', columnHeader);
-  // console.log('row header', rowHeader);
+
   // 헤더들의 요소 반환하기
   const columnHeaderEl = getElFromRowCol(columnHeader.row, columnHeader.column);
   const rowHeaderEl = getElFromRowCol(rowHeader.row, rowHeader.column);
@@ -124,7 +122,6 @@ function handleCellClick(cell) {
 function clearHeaderActiveStates() {
   // header class 로 가지고 있는 모든 요소를 리턴
   const headers = document.querySelectorAll(".active");
-  // console.log(Array.from(headers).map(h => console.log(h)));
 
   // header 요소에서 active 클래스를 지우기
   headers.forEach(header => {
