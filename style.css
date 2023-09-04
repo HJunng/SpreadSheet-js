@@ -1,5 +1,5 @@
 #export-btn {
-  background-color: #81c147;
+  background-color: #8ce1ff;
   color: white;
   border: none;
   padding: 10px;
@@ -23,10 +23,16 @@
   background: #ddd;
 }
 .cell.header.active {
-  background: #93bf85;
+  background: #7ed3f1;
 
   color: white;
 }
 .cell:focus {
-  border: 3px solid #93bf85;
+  border: 3px solid #7ed3f1;
+}
+.cell-number{
+  font-size: 20px;
+}
+#cell-status{
+  font-weight: bold;
 }
